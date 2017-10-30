@@ -73,18 +73,19 @@ public class ChangeActivity extends ActionBarActivity {
                     startActivity(intent);
                     finish();
                 }else{
-                    Toast.makeText(getApplicationContext(), "You have drawn the wrong Pattern", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Wrong Pattern..! Try again.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
-
+//Inflater for Menu.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_change, menu);
         return true;
     }
 
+    //To get selected item from Menu.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
